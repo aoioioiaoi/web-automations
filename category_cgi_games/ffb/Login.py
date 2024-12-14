@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()
 import httpx
 
+# 他の処理が上手く動作しないときはログアウト状態だからログイン処理を走らせてください。
 class Login:
     def __init__(self, user_id, user_password):
         self.user_id = user_id
